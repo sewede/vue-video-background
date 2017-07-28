@@ -17,9 +17,9 @@ A Vue component for a full width video background.
 
 You must at least give the videoSrc-prop.
 
-``` <vue-video-background videoSrc="path/to/your/video/file.webm"></vue-video-background> ```
+``` <vue-video-background videoSrcWebm="path/to/your/video/file.webm"></vue-video-background> ```
 
-Source file can be .webm or mp4
+Source file can be .webm or mp4 or specify both types for greater browser support. Webm will always be used first.
 
 
 ## Settings
