@@ -27,7 +27,7 @@ export default {
     poster: {
       default: '',
       default: String
-    }
+    },
     textOverlay: {
       default: false,
       type: Boolean
