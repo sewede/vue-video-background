@@ -1,7 +1,11 @@
 vue-video-background
 ----
+[![npm version](https://badge.fury.io/js/vue-video-background.svg)](https://badge.fury.io/js/vue-video-background)
 
 A Vue component for a full width video background.
+
+This package is in active development. Feel free to contribute.
+If you have any problems please open an issue on Github.
 
 ## Usage
 

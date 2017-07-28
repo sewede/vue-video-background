@@ -1,10 +1,10 @@
 <template>
   <div>
-    <video playsinline autoplay muted loop :poster="poster" id="bigvid">
+    <video playsinline autoplay muted loop :poster="poster" class="background-vid">
       <source :src="videoSrcWebm" type="video/webm">
       <source :src="videoSrcMp4" type="video/mp4">
     </video>
-    <div id="video-text" v-if="textOverlay">
+    <div class="text-overlay" v-if="textOverlay">
       <h1 v-text="textHeadline"></h1>
       <h2 v-text="textSubtitle"></h2>
       <p v-text="textBody"></p>
@@ -49,7 +49,7 @@ export default {
 </script>
 
 <style lang="css" scoped>
-  video#bigvid {
+  .background-vid {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -58,13 +58,10 @@ export default {
       width: auto;
       height: auto;
       z-index: -100;
-      -ms-transform: translateX(-50%) translateY(-50%);
-      -moz-transform: translateX(-50%) translateY(-50%);
-      -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
       background-size: cover;
   }
-  #video-text {
+  .text-overlay {
     font-weight:100;
     background: rgba(0,0,0,0.3);
     color: white;
@@ -75,15 +72,15 @@ export default {
     font-size: 1.2rem;
     min-height: 410px;
   }
-  #video-text h1 {
+  .text-overlay h1 {
     color: #fff;
     font-size: 38px;
   }
-  #video-text h2 {
+  .text-overlay h2 {
     font-size: 28px;
     color: #fff;
   }
-  #video-text p {
+  .text-overlay p {
     font-size: 14px;
   }
 </style>
