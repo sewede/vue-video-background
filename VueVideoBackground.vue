@@ -1,7 +1,8 @@
 <template>
   <div>
-    <video playsinline autoplay muted loop id="bigvid">
-      <source :src="videoSrc" type="video/webm">
+    <video playsinline autoplay muted loop :poster="poster" id="bigvid">
+      <source :src="videoSrcWebm" type="video/webm">
+      <source :src="videoSrcMp4" type="video/mp4">
     </video>
     <div id="video-text" v-if="textOverlay">
       <h1 v-text="textHeadline"></h1>
@@ -15,10 +16,18 @@
 <script>
 export default {
   props: {
-    videoSrc: {
+    videoSrcWebm: {
       default: '',
       type: String
     },
+    videoSrcMp4: {
+      default: '',
+      type: String
+    },
+    poster: {
+      default: '',
+      default: String
+    }
     textOverlay: {
       default: false,
       type: Boolean
@@ -53,7 +62,6 @@ export default {
       -moz-transform: translateX(-50%) translateY(-50%);
       -webkit-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
-      /*background: url(polina.jpg) no-repeat;*/
       background-size: cover;
   }
   #video-text {

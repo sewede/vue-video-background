@@ -19,12 +19,16 @@ You must at least give the videoSrc-prop.
 
 ``` <vue-video-background videoSrc="path/to/your/video/file.webm"></vue-video-background> ```
 
+Source file can be .webm or mp4
+
 
 ## Settings
 
 Option | Type | Default | Description
 ------ | ---- | ------- | -----------
-videoSrc | string | '' | The path to your video source.
+videoSrcWebm | string | '' | The path to your .webm video source.
+videoSrcMp4 | string | '' | The path to your .mp4 video source.
+poster | string | '' | Path to preview image. Will be replaced by video once it loads.
 textOverlay | boolean | false | Whether to show a text overlay or not.
 textHeadline | string | '' | The Headline for your text overlay. Will be in h1-tags.
 textSubtitle | string | '' | The Subtitle for your text overlay. Will be in h2-tags.
