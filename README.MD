@@ -7,17 +7,17 @@ A Vue component for a full width video background.
 
 1. Install via npm
 
-    npm install --save vue-video-background
+``` npm install --save vue-video-background ```
 
 2. Import the component
 
-    import VueVideoBackground from 'vue-video-background'
+``` import VueVideoBackground from 'vue-video-background' ```
 
 3. Use the component
 
 You must at least give the videoSrc-prop.
 
-    <vue-video-background videoSrc="path/to/your/video/file.webm"></vue-video-background>
+``` <vue-video-background videoSrc="path/to/your/video/file.webm"></vue-video-background> ```
 
 
 ## Settings
